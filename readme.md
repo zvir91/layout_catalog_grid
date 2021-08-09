@@ -1,41 +1,29 @@
-# Frontend practice with catalog page
+# Frontend practice with catalog page using grid
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_catalog/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_catalog/report/html_report/)
+- [DEMO LINK](https://<your_account>.github.io/layout_catalog_grid/)
 
 > Follow [this instructions](https://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
-___
-> Write styles in `src/styles/main.scss` instead of `src/style.css`.
-___
 
 ## The task
-Create HTML page with catalog. Develop semantic page structure as shown on [the mockup](https://www.figma.com/file/euXjY316CHKYkPRO1K0kjLsF/Moyo-Catalog?node-id=0%3A1).
+Implement layout using grid layout
+
+- Replace `flex` with `grid`
+- Media queries
+  - There should be four columns starting at `1024px`
+  - There should be three columns starting at `768px`
+  - There should be two columns starting at `488px`
+- Gap between cards should be `48px`
+- Do not modify header
+- Blocks should start from the left
+
 
 ## Requirements:
+- write styles in `src/styles/main.scss`
 - use SCSS in this task
-- pay attention the mock is responsive. Develop the layout to fit on `1024px` and `1200px` the same as on the mock.
-- reset browser's default margins
-- use images from [src/images](src/images)
-- use semantic tags. `<header>`, `<nav>`, `main`
-- pay attention to the shadow below the header
-- reuse the card from [Product cards](https://github.com/mate-academy/layout_product-cards#product-cards)
-- reuse the header from [Moyo header](https://github.com/mate-academy/layout_moyo-header#moyo-header)
-- card's width is `200px` inluding borders
-- add attribute `data-qa="nav-hover"` to the 4th nav link for testing (`Ноутбуки и компьютеры`)
-- add attribute `data-qa="card"` to the first card
-- add attribute `data-qa="card-hover"` to the link `Купить` inside first card
-- use class `is-active` for `apple` link
----
---> [CHECKLIST](https://github.com/mate-academy/layout_catalog/blob/master/checklist.md)
-
+- pay attention to the responsive
+- card's width is `200px` including borders
 
 ## Common mistakes
-- **IMPORTANT** Save and push your changes to github manually after `deploy`
-- Add **ALL** the `data-qa` attributes and `class="is-active"` required in the task
+- **IMPORTANT** Save and push your changes to GitHub manually after `deploy`
 - Do not use tabs. Use 2 spaces for indentation.
 - Don't use repeated styles.
-- Check font styles. Use [google fonts](https://fonts.google.com/)
-- Pay attention to `:hover` state
-
----
-![screenshot](./references/catalog-example.png)
