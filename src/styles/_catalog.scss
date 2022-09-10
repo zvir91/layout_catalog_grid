@@ -1,22 +1,36 @@
-.catalog {
-  display: flex;
-  flex-wrap: wrap;
+$card-width:200px;
 
+.catalog {
+  display: grid;
   max-width: 944px;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, $card-width);
+  margin: 48px auto;
+  gap: 48px;
+
+  @media screen and(max-width: 488px) { 
+    grid-template-columns: repeat(1, $card-width) ;
+  } 
+
+  @media screen and(min-width: 488px) { 
+    grid-template-columns: repeat(2, $card-width) ;
+  } 
+
+  @media screen and(min-width: 768px) { 
+    grid-template-columns: repeat(3, $card-width) ;
+  } 
+
+  @media screen and(min-width: 1024px) { 
+    grid-template-columns: repeat(4, $card-width) ;
+  } 
 
   &__card {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: $card-width;
     height: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 48px;
   }
 
-  &__card:not(:nth-child(4n)) {
-    margin-right: 48px;
-  }
 }
